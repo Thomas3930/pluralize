@@ -33,3 +33,10 @@ The trade-off: the rule list is finite and hand-maintained. Words like `mongoose
 - `toSingular(word)` — returns the singular form
 - `isPlural(word)` — returns `true` if the word is in plural form
 - `isSingular(word)` — returns `true` if the word is in singular form
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
