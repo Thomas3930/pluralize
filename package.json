@@ -1,6 +1,6 @@
 {
   "name": "pluralize",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "handles irregular english plurals too",
   "type": "module",
   "main": "src/index.js",
